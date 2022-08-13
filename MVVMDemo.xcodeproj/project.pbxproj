@@ -15,10 +15,12 @@
 		3D72D7A428A6C540001A1656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D72D7A228A6C540001A1656 /* LaunchScreen.storyboard */; };
 		3D72D7AF28A6C541001A1656 /* MVVMDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72D7AE28A6C541001A1656 /* MVVMDemoTests.swift */; };
 		3D72D7BA28A6C541001A1656 /* MVVMDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72D7B928A6C541001A1656 /* MVVMDemoUITests.swift */; };
-		3D72D7DE28A6CBC1001A1656 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 3D72D7DA28A6CBC0001A1656 /* Model */; };
-		3D72D7DF28A6CBC1001A1656 /* ViewModel in Resources */ = {isa = PBXBuildFile; fileRef = 3D72D7DB28A6CBC1001A1656 /* ViewModel */; };
-		3D72D7E028A6CBC1001A1656 /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = 3D72D7DC28A6CBC1001A1656 /* Controller */; };
 		3D72D7EA28A6CC1B001A1656 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72D7E928A6CC1A001A1656 /* APIService.swift */; };
+		3D72D7F628A7B1E0001A1656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72D7F528A7B1E0001A1656 /* ViewController.swift */; };
+		3D72D7FF28A7B222001A1656 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72D7FE28A7B222001A1656 /* QuestionModel.swift */; };
+		3D72D80B28A7B248001A1656 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72D80A28A7B248001A1656 /* QuestionViewModel.swift */; };
+		3D72D81328A7DA11001A1656 /* QuestionTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72D81228A7DA11001A1656 /* QuestionTableViewDataSource.swift */; };
+		3D72D81928A7DD0F001A1656 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72D81828A7DD0F001A1656 /* QuestionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +55,12 @@
 		3D72D7B528A6C541001A1656 /* MVVMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D72D7B928A6C541001A1656 /* MVVMDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMDemoUITests.swift; sourceTree = "<group>"; };
 		3D72D7BB28A6C541001A1656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D72D7DA28A6CBC0001A1656 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
-		3D72D7DB28A6CBC1001A1656 /* ViewModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewModel; sourceTree = "<group>"; };
-		3D72D7DC28A6CBC1001A1656 /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
 		3D72D7E928A6CC1A001A1656 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3D72D7F528A7B1E0001A1656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D72D7FE28A7B222001A1656 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		3D72D80A28A7B248001A1656 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		3D72D81228A7DA11001A1656 /* QuestionTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewDataSource.swift; sourceTree = "<group>"; };
+		3D72D81828A7DD0F001A1656 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +111,14 @@
 		3D72D79328A6C53C001A1656 /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3D72D82028A7DD2C001A1656 /* StoryBoard */,
+				3D72D81728A7DCEA001A1656 /* Views */,
+				3D72D80928A7B234001A1656 /* ViewModel */,
+				3D72D7FD28A7B214001A1656 /* Model */,
+				3D72D7F428A7B1CC001A1656 /* Controller */,
 				3D72D7E828A6CC0E001A1656 /* Service */,
-				3D72D7DC28A6CBC1001A1656 /* Controller */,
-				3D72D7DA28A6CBC0001A1656 /* Model */,
-				3D72D7DB28A6CBC1001A1656 /* ViewModel */,
 				3D72D79428A6C53C001A1656 /* AppDelegate.swift */,
 				3D72D79628A6C53C001A1656 /* SceneDelegate.swift */,
-				3D72D79A28A6C53C001A1656 /* Main.storyboard */,
 				3D72D7A028A6C540001A1656 /* Assets.xcassets */,
 				3D72D7A228A6C540001A1656 /* LaunchScreen.storyboard */,
 				3D72D7A528A6C540001A1656 /* Info.plist */,
@@ -146,6 +151,47 @@
 				3D72D7E928A6CC1A001A1656 /* APIService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		3D72D7F428A7B1CC001A1656 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D72D7F528A7B1E0001A1656 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D72D7FD28A7B214001A1656 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D72D7FE28A7B222001A1656 /* QuestionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D72D80928A7B234001A1656 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D72D80A28A7B248001A1656 /* QuestionViewModel.swift */,
+				3D72D81228A7DA11001A1656 /* QuestionTableViewDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D72D81728A7DCEA001A1656 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D72D81828A7DD0F001A1656 /* QuestionTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D72D82028A7DD2C001A1656 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3D72D79A28A6C53C001A1656 /* Main.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,11 +297,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D72D7DF28A6CBC1001A1656 /* ViewModel in Resources */,
 				3D72D7A428A6C540001A1656 /* LaunchScreen.storyboard in Resources */,
-				3D72D7E028A6CBC1001A1656 /* Controller in Resources */,
 				3D72D7A128A6C540001A1656 /* Assets.xcassets in Resources */,
-				3D72D7DE28A6CBC1001A1656 /* Model in Resources */,
 				3D72D79C28A6C53C001A1656 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,9 +324,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D72D7F628A7B1E0001A1656 /* ViewController.swift in Sources */,
+				3D72D80B28A7B248001A1656 /* QuestionViewModel.swift in Sources */,
 				3D72D79F28A6C53C001A1656 /* MVVMDemo.xcdatamodeld in Sources */,
 				3D72D79528A6C53C001A1656 /* AppDelegate.swift in Sources */,
+				3D72D7FF28A7B222001A1656 /* QuestionModel.swift in Sources */,
 				3D72D7EA28A6CC1B001A1656 /* APIService.swift in Sources */,
+				3D72D81928A7DD0F001A1656 /* QuestionTableViewCell.swift in Sources */,
+				3D72D81328A7DA11001A1656 /* QuestionTableViewDataSource.swift in Sources */,
 				3D72D79728A6C53C001A1656 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
