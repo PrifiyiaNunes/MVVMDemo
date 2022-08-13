@@ -111,7 +111,6 @@
 		3D72D79328A6C53C001A1656 /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3D72D7FD28A7B214001A1656 /* Model */,
 				3D72D82028A7DD2C001A1656 /* StoryBoard */,
 				3D72D83528A80BE5001A1656 /* QuestionsMVVM */,
 				3D72D7E828A6CC0E001A1656 /* Service */,
@@ -227,6 +226,7 @@
 		3D72D83528A80BE5001A1656 /* QuestionsMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				3D72D7FD28A7B214001A1656 /* Model */,
 				3D72D81728A7DCEA001A1656 /* Views */,
 				3D72D80928A7B234001A1656 /* ViewModel */,
 				3D72D7F428A7B1CC001A1656 /* Controller */,
