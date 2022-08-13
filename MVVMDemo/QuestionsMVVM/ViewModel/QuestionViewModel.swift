@@ -7,22 +7,22 @@
 
 import Foundation
 
+protocol ApiFetchResponseDelegate {
+    func returnAPICall(_ status: Bool)
+}
 class QuestionViewModel: NSObject {
-    private var url = "https://quiz-68112-default-rtdb.firebaseio.com/quiz.json"
-    private var quesionModel : QuestionModel? {
-        didSet {
-            self.bindDataToController()
-        }
-    }
-    private var apiService : APIService?
     
-    var bindDataToController: (() -> ()) = {}
+    private var url = "https://quiz-68112-default-rtdb.firebaseio.com/quiz.json"
+    var quesionModel : QuestionModel?
+    private var apiService : APIService?
+    var delegate : ApiFetchResponseDelegate?
     
     override init() {
         super.init()
         self.apiService = APIService.shared()
         callApi(completion: { (questionData) in
             self.quesionModel = questionData
+            self.delegate?.returnAPICall(true)
         })
     }
     

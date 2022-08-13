@@ -11,20 +11,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var questionModel : QuestionModel?
-    var viewmodel: QuestionViewModel?
+    var viewmodel = QuestionViewModel()
     
     private var dataSource: QuestionTableViewDataSource<QuestionTableViewCell, Question?>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        callToViewModelForUIUpdate()
+        viewmodel.delegate = self
     }
     
     func callToViewModelForUIUpdate() {
-        self.viewmodel = QuestionViewModel()
-        self.viewmodel?.bindDataToController = {
-            self.updateDataSource()
-        }
+        self.questionModel = self.viewmodel.quesionModel
+        self.updateDataSource()
     }
     
     func updateDataSource() {
@@ -40,3 +38,10 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController : ApiFetchResponseDelegate {
+    func returnAPICall(_ status: Bool) {
+        if status {
+            callToViewModelForUIUpdate()
+        }
+    }
+}

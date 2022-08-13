@@ -111,18 +111,14 @@
 		3D72D79328A6C53C001A1656 /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3D72D82028A7DD2C001A1656 /* StoryBoard */,
-				3D72D81728A7DCEA001A1656 /* Views */,
-				3D72D80928A7B234001A1656 /* ViewModel */,
 				3D72D7FD28A7B214001A1656 /* Model */,
-				3D72D7F428A7B1CC001A1656 /* Controller */,
+				3D72D82028A7DD2C001A1656 /* StoryBoard */,
+				3D72D83528A80BE5001A1656 /* QuestionsMVVM */,
 				3D72D7E828A6CC0E001A1656 /* Service */,
-				3D72D79428A6C53C001A1656 /* AppDelegate.swift */,
-				3D72D79628A6C53C001A1656 /* SceneDelegate.swift */,
-				3D72D7A028A6C540001A1656 /* Assets.xcassets */,
-				3D72D7A228A6C540001A1656 /* LaunchScreen.storyboard */,
-				3D72D7A528A6C540001A1656 /* Info.plist */,
-				3D72D79D28A6C53C001A1656 /* MVVMDemo.xcdatamodeld */,
+				3D72D82528A80AB8001A1656 /* Delegate */,
+				3D72D82A28A80B28001A1656 /* Resource */,
+				3D72D82E28A80B39001A1656 /* Plist */,
+				3D72D82928A80B20001A1656 /* CoreData */,
 			);
 			path = MVVMDemo;
 			sourceTree = "<group>";
@@ -189,9 +185,53 @@
 		3D72D82028A7DD2C001A1656 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				3D72D7A228A6C540001A1656 /* LaunchScreen.storyboard */,
 				3D72D79A28A6C53C001A1656 /* Main.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		3D72D82528A80AB8001A1656 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3D72D79428A6C53C001A1656 /* AppDelegate.swift */,
+				3D72D79628A6C53C001A1656 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		3D72D82928A80B20001A1656 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3D72D79D28A6C53C001A1656 /* MVVMDemo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3D72D82A28A80B28001A1656 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3D72D7A028A6C540001A1656 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3D72D82E28A80B39001A1656 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				3D72D7A528A6C540001A1656 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		3D72D83528A80BE5001A1656 /* QuestionsMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				3D72D81728A7DCEA001A1656 /* Views */,
+				3D72D80928A7B234001A1656 /* ViewModel */,
+				3D72D7F428A7B1CC001A1656 /* Controller */,
+			);
+			path = QuestionsMVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,7 +550,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6Q9FV3GHT;
-				INFOPLIST_FILE = MVVMDemo/Info.plist;
+				INFOPLIST_FILE = MVVMDemo/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,7 +569,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6Q9FV3GHT;
-				INFOPLIST_FILE = MVVMDemo/Info.plist;
+				INFOPLIST_FILE = MVVMDemo/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

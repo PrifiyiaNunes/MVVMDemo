@@ -24,7 +24,9 @@ class QuestionTableViewDataSource<CELL: UITableViewCell, T> : NSObject, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        tableView.tableFooterView = UIView(frame: .zero)
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier ?? "", for: indexPath) as! CELL
+        cell.selectionStyle = .none
         if let item = self.items?[indexPath.row] {
             self.configureCell(cell, item)
         }
